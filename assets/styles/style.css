@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #393e46;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+nav a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 25px;
+    transition: all 0.5s;
+}
+nav a:hover{
+    font-weight: bold;
+    color: red;
+}
+nav li {
+    list-style: none;
+    display: inline;
+}
+.jumbotron {
+    padding: 300px 0 50px 0;
+    background-size: cover;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/22/21/16/cartridges-2166491_960_720.jpg);
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+/* footer */
+footer {
+    padding-top: 15px;
+    text-align: center;
+    background-color: #393e46;
+    height: 60px;
+}
+footer h3 {
+    font-size: 15px;
+}
+/* main */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+.card {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.card h2{
+    text-align: center;
+}
+#content {
+    float: left;
+    width: 75%;
+}
+.featured-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 4 game terlaris */
+.game-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: wheat;
+    text-align: center;
+    
+}
+.game {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    border: 5px dashed darkorange;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.game-logo {
+    position: relative;
+    display: inline-block;
+}
+.clear {
+    clear: left;
+}
+/* aside SAMPE SINI TERAHIR*/
+aside {
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+    color: black;
+}
+.profile section{
+    text-align: center;
+}
+.profile img {
+    width: 100%;
+}
+table {
+    width: 100%;
+    border: 2px dashed darkorange;
+}
+/* @media screen and (max-width: 670px) {
+    #content{
+        width: 100%;
+
+    }
+    .game-wrapper{
+        width: 100%;
+    }
+    .game {
+        width: 100%;
+        margin-left: 2px;
+    }
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .profile img {
+        width: 100%;
+    }
+    table {
+        width: 50%;
+        padding: 10px;
+        margin-left: 5%;
+    }
+} */
+@media screen and (max-width: 1314px) {
+    #content,
+    /* .game-wrapper, */
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .game-wrapper{
+        width: 100%;
+    }
+    .game {
+        width: 100%;
+        margin-left: 2px;
+    }
+    .profile img {
+        width: 100%;
+    }
+    table {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
